@@ -2,78 +2,88 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #111;
-    color: #f2f2f2;
+    background-color: #0d0d0d;
+    font-family: 'Roboto', sans-serif;
+    color: #e6e6e6;
 }
 
 header {
-    background-color: #1a1a1a;
-    padding: 20px 40px;
+    background: linear-gradient(135deg, #1c1c1c, #2b2b2b);
+    padding: 30px;
     text-align: center;
-    border-bottom: 3px solid #ff4d00;
+    border-bottom: 5px solid #ff0000;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.2);
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5em;
-    color: #ff4d00;
-    text-shadow: 1px 1px 5px #000;
+    font-size: 3em;
+    color: #ff0000;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 nav {
     display: flex;
     justify-content: center;
-    background-color: #2a2a2a;
-    padding: 10px;
+    background-color: #141414;
+    padding: 15px 0;
 }
 
 nav a {
-    color: #f2f2f2;
+    color: #ccc;
     text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-    transition: color 0.3s;
+    margin: 0 20px;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: #ff4d00;
+    color: #ff0000;
 }
 
 .container {
     max-width: 1200px;
-    margin: 30px auto;
+    margin: 40px auto;
     padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
 }
 
 .card {
-    background-color: #1f1f1f;
+    background-color: #1a1a1a;
     border: 1px solid #333;
-    border-radius: 10px;
+    border-radius: 12px;
     overflow: hidden;
-    margin-bottom: 30px;
-    box-shadow: 0 0 10px rgba(255, 77, 0, 0.2);
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
 }
 
 .card:hover {
-    transform: scale(1.02);
+    transform: scale(1.03);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
 }
 
 .card img {
     width: 100%;
-    height: auto;
+    height: 200px;
+    object-fit: cover;
 }
 
 .card-content {
-    padding: 15px;
+    padding: 20px;
 }
 
 .card-content h2 {
-    margin-top: 0;
-    color: #ff4d00;
+    margin: 0;
+    font-size: 1.5em;
+    color: #ff0000;
+    margin-bottom: 10px;
 }
 
 .card-content p {
-    line-height: 1.5;
+    font-size: 0.95em;
+    color: #ccc;
+    line-height: 1.6;
 }
