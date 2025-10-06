@@ -1,10 +1,55 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registro de Trocas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        input, button {
+            padding: 8px;
+            margin: 5px;
+            font-size: 16px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #ddd;
+        }
+    </style>
 </head>
 <body>
-    
-</body>
-</html>
+
+    <h1>Registro de Trocas</h1>
+
+    <label>Marca:</label>
+    <input type="text" id="marca" placeholder="Ej. Ford"><br>
+
+    <label>Modelo:</label>
+    <input type="text" id="modelo" placeholder="Ej. F-150"><br>
+
+    <label>Año:</label>
+    <input type="number" id="anio" placeholder="Ej. 2020"><br>
+
+    <button onclick="agregarTroca()">Agregar Troca</button>
+
+    <table id="tablaTrocas">
+        
